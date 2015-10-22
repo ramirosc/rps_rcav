@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
-get("/rock", :controller => "layouts" , :action => "new")
-get("/paper", :controller => "layouts" , :action => "new")
-get("/scissors", :controller => "layouts" , :action => "new")
+get("/", :controller => "rps" , :action => "new")
+get("/rock", :controller => "rps" , :action => "rock")
+get("/paper", :controller => "rps" , :action => "paper")
+get("/scissors", :controller => "rps" , :action => "scissors")
 
 
 end
