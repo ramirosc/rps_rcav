@@ -1,9 +1,45 @@
-<h1>You chose Scissors</h1>
-<p>Your opponent chose <%= @random %>. You <%= @result %> </p>
-<p>Wanna play again?</p>
-<ul>
-<li> <a href="../paper"> Paper </a></li>
-<li> <a href="../scissors"> Scissors </a> </li>
-<li> <a href="../rock"> Rock </a> </li>
-</ul>
-<img src="http://localhost:3000/assets/images/scissors.png">
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-3">
+
+<div class="panel panel-success">
+  <div class="panel-heading">You chose Scissors</div>
+  <div class="panel-body">
+    <img src="http://localhost:3000/assets/images/scissors.png" class="img-responsive" alt="Responsive image" >
+  </div>
+</div>
+</div>
+
+
+
+
+
+        <div class="col-md-3">
+<div class="panel panel-info">
+  <div class="panel-heading">Your opponent chose <%= @random %></div>
+  <div class="panel-body">
+    <img src="http://localhost:3000/assets/images/<%= @random %>.png" class="img-responsive" alt="Responsive image" >
+  </div>
+</div>
+
+
+          </div>
+    </div>
+
+
+
+
+
+
+    <div class="row">
+    <div class="col-md-6">
+<div class="well">
+    You <%= @result %>
+
+    </div>
+</div>
+
+    </div>
+</div>
+
